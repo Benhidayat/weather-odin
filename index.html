@@ -10,18 +10,18 @@
     </head>
     <body>
         <main>
-            <form action="">
-                <input type="search" autocomplete="off">
+            <form action="" class="js-form">
+                <input type="search" autocomplete="off" id="search__value">
                 <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
 
             <section class="result">
-                <figure class="country__name">
-                    <figcaption>London</figcaption>
-                    <img src="https://flagsapi.com/BE/shiny/32.png" alt="">
+                <figure class="country__name" id="city">
+                    <figcaption></figcaption>
+                    <img src="https://flagsapi.com/GB/shiny/32.png" alt="">
                 </figure>
 
-                <figure class="temperature">
+                <figure class="temperature" id="temperature">
                     <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="">
                     <figcaption>
                         <span>31</span>
@@ -29,7 +29,7 @@
                     </figcaption>
                 </figure>
 
-                <p class="description">
+                <p class="description js-description">
                     Overcast Clouds
                 </p>
 
@@ -37,16 +37,16 @@
                     <li>
                         <span>Clouds</span>
                         <i class="fa-solid fa-cloud"></i>
-                        <span>98</span>%
+                        <span id="clouds">98</span>%
                     </li>
                     <li><span>Humidity</span>
                         <i class="fa-solid fa-droplet"></i>
-                        <span>55</span>%
+                        <span id="humidity">55</span>%
                     </li>    
                     <li>
                         <span>Pressure</span>
                         <i class="fa-solid fa-gauge"></i>
-                        <span>1001</span>hPa
+                        <span id="pressure">1001</span>hPa
                     </li>
                 </ul>
             </section>
